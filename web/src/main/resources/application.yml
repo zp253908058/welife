@@ -1,0 +1,45 @@
+server:
+  port: 8080
+  address: localhost
+  servlet:
+    context-path: /welife
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+    root: INFO
+
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://47.106.84.158:3306/we_life
+      username: root
+      password: 921314
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      filters: stat,slf4j
+      name: wms
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.swpu.welife.web.model
+  configuration:
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-prefix: WMS
+    jdbc-type-for-null: varchar
+
+
+debug: true
