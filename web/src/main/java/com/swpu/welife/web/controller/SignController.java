@@ -14,7 +14,7 @@ public class SignController {
     }
 
     @GetMapping("register")
-    public ResponseEntity<EmptyEntity> register() {
-        return new ResponseEntity<>();
+    public ResponseEntity<String> register() {
+        return new ResponseEntity<>("ddddd");
     }
 }

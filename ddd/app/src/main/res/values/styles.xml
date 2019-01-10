@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="DrawerArrowToggleStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="AppBarLayoutStyle" parent="Widget.Design.AppBarLayout">
+        <item name="elevation">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="navigationIcon">@null</item>
+        <item name="elevation">4dp</item>
+        <item name="titleTextAppearance">@style/ToolbarTextAppearance.Title</item>
+        <item name="subtitleTextAppearance">@style/ToolbarTextAppearance.Subtitle</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="ToolbarTextAppearance">
+        <!--<item name="android:fontFamily">sans-serif-condensed</item>-->
+        <item name="android:textColor">@android:color/white</item>
+        <!--<item name="android:shadowDx">1</item>-->
+        <!--<item name="android:shadowDy">1</item>-->
+        <!--<item name="android:shadowRadius">2</item>-->
+        <!--<item name="android:shadowColor">?colorAccent</item>-->
+    </style>
+
+    <style name="ToolbarTextAppearance.Title">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="ToolbarTextAppearance.Subtitle">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:layout_height">@dimen/normal_button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/background_selectable_button</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+</resources>
