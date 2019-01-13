@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/componet_base" />
+            <option value="$PROJECT_DIR$/componet_util" />
+            <option value="$PROJECT_DIR$/welife_base" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
